@@ -1,0 +1,15 @@
+{
+  "name": "purescript-dom-delegator",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dom-delegator": "^13.1.0",
+    "gulp": "^3.8.11",
+    "gulp-foreach": "^0.1.0",
+    "gulp-purescript": "^0.1.2",
+    "gulp-shell": "^0.3.0",
+    "run-sequence": "^1.0.2",
+    "webpack": "^1.5.3"
+  }
+}
