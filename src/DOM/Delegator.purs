@@ -27,7 +27,7 @@ function unsafeCoerce(a){
 }""" :: forall a b. a -> b
 
 -- | preserve dom-delegator from dead code eliminator
---   and add extra listening events.
+-- | and add extra listening events.
 domDelegatorWith :: forall e a. [String] -> EffDelegator e a -> Eff e a
 domDelegatorWith es m = do
   foreachE es $ \e -> runFn2 listenToImpl delegator e

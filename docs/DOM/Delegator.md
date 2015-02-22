@@ -22,6 +22,9 @@ type EffDelegator e = Eff (delegator :: Delegator | e)
 domDelegatorWith :: forall e a. [String] -> EffDelegator e a -> Eff e a
 ```
 
+preserve dom-delegator from dead code eliminator
+and add extra listening events.
+
 #### `domDelegator`
 
 ``` purescript
