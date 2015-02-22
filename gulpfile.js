@@ -3,7 +3,6 @@ var purescript = require('gulp-purescript');
 var foreach    = require('gulp-foreach');
 var shell      = require('gulp-shell');
 var sequence   = require('run-sequence');
-
 var path       = require('path');
 
 var bowerPurs = 'bower_components/purescript-*/src/**/*.purs';
@@ -45,7 +44,7 @@ gulp.task('example', function(){
     .pipe(purescript.psc(
       { main: "Main"
       , output: 'main.js'
-      , modules: ['Main']
+      , modules: ['Main', 'Control.Timer']
       }))
     .pipe(gulp.dest('examples/'));
 });
